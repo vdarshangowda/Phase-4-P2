@@ -1,0 +1,32 @@
+Project Name :Docerizing Angular Application
+Tools used:
+		Docker:creating container
+		aws:ec2 instance
+		visual studio code.
+
+Requirements:
+	As a MEAN Stack Developer,
+ 	you have to deploy an Angular application on Docker container on an EC2 instance.
+
+
+steps we have done :
+
+1)First we build the angular application by using the command ng build --prod .
+
+2)Ater building it generates the dist file ,we need to copy that files for the future use.
+
+3)we need to create a docker file in our angular application .
+
+4)we build images using the command docker built -p 80:80 image_name.
+
+5)we need to create the container also .docker run -d -p 90:90 --name container1 appname
+
+6)After that we created the ec2 instance and we have copied the dist files to the virtual machine ,
+using the ipv4 address we are able to access the our angular application.
+
+7)http://35.154.50.145/#/ open this link to find my angular application.
+
+Thank you 
+Regards,
+
+Darshan P V
